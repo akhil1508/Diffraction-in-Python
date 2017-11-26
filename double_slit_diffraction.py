@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.widgets import Slider, Button, RadioButtons
+from matplotlib.widgets import Slider
 from diffraction import double_slit_diffraction_intensity
 
-X = np.arange(-0.004,0.004,0.00001)
+X = np.arange(-0.005,0.005,0.00001)
 slit_width = 100*(10**-6)
 wavelength = 500*(10**-9)
 screen_distance = 50*(10**-2)
