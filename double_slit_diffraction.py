@@ -24,6 +24,9 @@ slit_width_slider = Slider(axis2, "Slit Width(micrometers)", 10, 1000, valinit=s
 screen_distance_slider = Slider(axis3, "Screen Distance(cm)", 10, 100, valinit= screen_distance*10**2)
 distance_between_slits_slider = Slider(axis4, "Distance b/w slits(mm)", 0.1, 10, valinit=distance_between_slits*10**3) 
 
+"""
+  Dynamic callback function to update slider values and plot again
+"""
 def update(val) :
   wavelength = wavelength_slider.val*(10**-9)
   slit_width = slit_width_slider.val*(10**-6)
